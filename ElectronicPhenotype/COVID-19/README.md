@@ -23,21 +23,21 @@ Please find more information on our canonical SQL [here](https://github.com/DBMI
 
 ### To identify a hospitalization encounter:
 * Patient must have a hospitalization encounter on/after January 1, 2020, identified by: <br>
-  Concept Set #244 [[R2D2 - COVID19] INPATIENT VISIT](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/244_R2D2__INPATIENT_VISIT)
+  Concept Set #244 [[R2D2 - COVID19] INPATIENT VISIT](ElectronicPhenotype/COVID-19/JSONS/244_R2D2__INPATIENT_VISIT)
 
 <br><br>
 
 ### To identify a positive viral test for SARS-CoV-2:
 * Patient must have at least one combination of SARS-CoV-2 viral lab test and one positive measurement value (e.g. positive, detected, present), identified by: <br> 
-    * Concept Set #242 [[R2D2 - COVID19]  SARSCOV2 Viral Lab Test (pre-coordinated measurements excluded)](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/242_R2D2__SARSCOV2_Viral_Lab_Test__non_pre_coordinated.json)
+    * Concept Set #242 [[R2D2 - COVID19]  SARSCOV2 Viral Lab Test (pre-coordinated measurements excluded)](ElectronicPhenotype/COVID-19/JSONS/242_R2D2__SARSCOV2_Viral_Lab_Test__non_pre_coordinated.json)
       <br> 
       between the interval of 21 days prior to hospitalization and hospital encounter discharge
     <br> AND
-    * Concept Set #240 [[R2D2 - COVID19] Measurement value_as_concept positive/detected/present](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/240_R2D2__Measurement__value_as_concept_id__positive_detected_present.json)
+    * Concept Set #240 [[R2D2 - COVID19] Measurement value_as_concept positive/detected/present](ElectronicPhenotype/COVID-19/JSONS/240_R2D2__Measurement__value_as_concept_id__positive_detected_present.json)
      <br> on the same date as the SARS-CoV-2 viral lab test
 
 * OR Patient must have at least one occurence of a pre-coordinated SARS-CoV-2 viral lab test, identified by: <br> 
-  * Concept Set #243 [[R2D2 - COVID19] SARSCOV2 Viral Lab Test (pre-coordinated measurements) positive](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/243_R2D2__SARSCOV2_Viral_Lab_Test__pre_coordinated_measurements_positive.json)
+  * Concept Set #243 [[R2D2 - COVID19] SARSCOV2 Viral Lab Test (pre-coordinated measurements) positive](ElectronicPhenotype/COVID-19/JSONS/243_R2D2__SARSCOV2_Viral_Lab_Test__pre_coordinated_measurements_positive.json)
     <br> 
     between the interval of 21 days prior to hospitalization and hospital encounter discharge
     
@@ -46,47 +46,47 @@ Please find more information on our canonical SQL [here](https://github.com/DBMI
 ### To identify a positive diagnosis for COVID-19:
 * BEFORE April 1, 2020: 
     * Patient must have at least one of the diagnoses codes, identified by: <br>
-    Concept Set #245 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM B97.29 and mapped SNOMED 27619001 - with LOGIC - before April 1, 2020](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/245_R2D2__Diagnoses_Codes_ICD10CM_B97.29_and%20_mapped_SNOMED%1F_27619001__withLOGIC__before_April_1_2020.json)
+    Concept Set #245 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM B97.29 and mapped SNOMED 27619001 - with LOGIC - before April 1, 2020](ElectronicPhenotype/COVID-19/JSONS/245_R2D2__Diagnoses_Codes_ICD10CM_B97.29_and%20_mapped_SNOMED%1F_27619001__withLOGIC__before_April_1_2020.json)
     <br> AND 
     * at least one of the diagnoses codes, identified by: <br>
-    Concept Set #247 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM and mapped SNOMED - with LOGIC - before or/and after April 1, 2020](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/247_R2D2__Diagnoses_Codes_ICD10CM_and_mapped%20SNOMED__with_LOGIC__before_after_April_1_2020.json)
+    Concept Set #247 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM and mapped SNOMED - with LOGIC - before or/and after April 1, 2020](ElectronicPhenotype/COVID-19/JSONS/247_R2D2__Diagnoses_Codes_ICD10CM_and_mapped%20SNOMED__with_LOGIC__before_after_April_1_2020.json)
     <br> between the interval of 21 days prior to hospitalization and hospital encounter discharge
 
 * OR AT/AFTER April 1, 2020: 
     * Patient must have at least one of the diagnoses codes, identified by: <br>
-    Concept Set #246 [[R2D2 -  COVID19] Diagnoses Codes: ICD10CM U07.1 and mapped SNOMED 840539006- with LOGIC - after April 1, 2020](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/246_R2D2__Diagnoses_Codes_ICD10CM_U07.1_and%20_mapped_SNOMED%1F_840539006__withLOGIC__after_April_1_2020.json)
+    Concept Set #246 [[R2D2 -  COVID19] Diagnoses Codes: ICD10CM U07.1 and mapped SNOMED 840539006- with LOGIC - after April 1, 2020](ElectronicPhenotype/COVID-19/JSONS/246_R2D2__Diagnoses_Codes_ICD10CM_U07.1_and%20_mapped_SNOMED%1F_840539006__withLOGIC__after_April_1_2020.json)
     <br> AND 
     * at least one of the diagnoses codes, identified by: <br>
-     Concept Set #247 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM and mapped SNOMED - with LOGIC - before or/and after April 1, 2020](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/247_R2D2__Diagnoses_Codes_ICD10CM_and_mapped%20SNOMED__with_LOGIC__before_after_April_1_2020.json) 
+     Concept Set #247 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM and mapped SNOMED - with LOGIC - before or/and after April 1, 2020](ElectronicPhenotype/COVID-19/JSONS/247_R2D2__Diagnoses_Codes_ICD10CM_and_mapped%20SNOMED__with_LOGIC__before_after_April_1_2020.json) 
     <br> between the interval of 21 days prior to hospitalization and hospital encounter discharge
 
 * OR BEFORE/AT/AFTER April 1, 2020:
   * Patient must have at least one of the pre-coordinated diagnoses codes, identified by: <br>
-    Concept Set #248 [[R2D2 - COVID19] Diagnoses Codes: all without logic](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/248_R2D2__Diagnoses_Codes_without_logic.json)
+    Concept Set #248 [[R2D2 - COVID19] Diagnoses Codes: all without logic](ElectronicPhenotype/COVID-19/JSONS/248_R2D2__Diagnoses_Codes_without_logic.json)
     <br> between the interval of 21 days prior to hospitalization and hospital encounter discharge
   
 <br><br>
  
 ### Concept Sets
 * Inpatient Visit:
-     * #244 [[R2D2 - COVID19] INPATIENT VISIT](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/244_R2D2__INPATIENT_VISIT)
+     * #244 [[R2D2 - COVID19] INPATIENT VISIT](ElectronicPhenotype/COVID-19/JSONS/244_R2D2__INPATIENT_VISIT)
 * Viral lab tests:
-     * #242 [[R2D2 - COVID19] SARSCOV2 Viral Lab Test (pre-coordinated measurements excluded)](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/242_R2D2__SARSCOV2_Viral_Lab_Test__non_pre_coordinated.json)
-     * #240 [[R2D2 - COVID19] Measurement value_as_concept positive/detected/present](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/240_R2D2__Measurement__value_as_concept_id__positive_detected_present.json)
-     * #243 [[R2D2 - COVID19] SARSCOV2 Viral Lab Test (pre-coordinated measurements) positive](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/243_R2D2__SARSCOV2_Viral_Lab_Test__pre_coordinated_measurements_positive.json)
+     * #242 [[R2D2 - COVID19] SARSCOV2 Viral Lab Test (pre-coordinated measurements excluded)](ElectronicPhenotype/COVID-19/JSONS/242_R2D2__SARSCOV2_Viral_Lab_Test__non_pre_coordinated.json)
+     * #240 [[R2D2 - COVID19] Measurement value_as_concept positive/detected/present](ElectronicPhenotype/COVID-19/JSONS/240_R2D2__Measurement__value_as_concept_id__positive_detected_present.json)
+     * #243 [[R2D2 - COVID19] SARSCOV2 Viral Lab Test (pre-coordinated measurements) positive](ElectronicPhenotype/COVID-19/JSONS/243_R2D2__SARSCOV2_Viral_Lab_Test__pre_coordinated_measurements_positive.json)
 * Diagnosis codes:
-     * #245 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM B97.29 and mapped SNOMED 27619001 - with LOGIC - before April 1, 2020](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/245_R2D2__Diagnoses_Codes_ICD10CM_B97.29_and%20_mapped_SNOMED%1F_27619001__withLOGIC__before_April_1_2020.json)
-     * #246 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM U07.1 and mapped SNOMED 840539006- with LOGIC - after April 1, 2020](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/246_R2D2__Diagnoses_Codes_ICD10CM_U07.1_and%20_mapped_SNOMED%1F_840539006__withLOGIC__after_April_1_2020.json)
-     * #247 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM and mapped SNOMED - with LOGIC - before or/and after April 1, 2020](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/247_R2D2__Diagnoses_Codes_ICD10CM_and_mapped%20SNOMED__with_LOGIC__before_after_April_1_2020.json)
-     * #248 [[R2D2 - COVID19] Diagnoses Codes: all without logic](https://github.com/DBMI/R2D2-Public/blob/master/ElectronicPhenotype/COVID-19/JSONS/248_R2D2__Diagnoses_Codes_without_logic.json)
+     * #245 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM B97.29 and mapped SNOMED 27619001 - with LOGIC - before April 1, 2020](ElectronicPhenotype/COVID-19/JSONS/245_R2D2__Diagnoses_Codes_ICD10CM_B97.29_and%20_mapped_SNOMED%1F_27619001__withLOGIC__before_April_1_2020.json)
+     * #246 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM U07.1 and mapped SNOMED 840539006- with LOGIC - after April 1, 2020](ElectronicPhenotype/COVID-19/JSONS/246_R2D2__Diagnoses_Codes_ICD10CM_U07.1_and%20_mapped_SNOMED%1F_840539006__withLOGIC__after_April_1_2020.json)
+     * #247 [[R2D2 - COVID19] Diagnoses Codes: ICD10CM and mapped SNOMED - with LOGIC - before or/and after April 1, 2020](ElectronicPhenotype/COVID-19/JSONS/247_R2D2__Diagnoses_Codes_ICD10CM_and_mapped%20SNOMED__with_LOGIC__before_after_April_1_2020.json)
+     * #248 [[R2D2 - COVID19] Diagnoses Codes: all without logic](ElectronicPhenotype/COVID-19/JSONS/248_R2D2__Diagnoses_Codes_without_logic.json)
 
 <br><br>
 
 ### Canonical SQL/Stored Procedures:
 A set of hospitalization encounters for adult COVID-19 patients will be identified by executing the SQL/stored procedure function:
-* [template_sp_identify_hospitalization_encounters.sql](https://github.com/DBMI/R2D2-Public/blob/master/Question_0000/sql/template_sp_identify_hospitalization_encounters.sql)
-<br> which executes (line 87) the stored procedure [template_fn_identify_patients.sql](https://github.com/DBMI/R2D2-Public/blob/master/Question_0000/sql/template_fn_identify_patients.sql)
-* Example: [Question_0008](https://github.com/DBMI/R2D2-Public/tree/master/Question_0008) see [template_query.sql](https://github.com/DBMI/R2D2-Public/blob/master/Question_0008/sql/template_query.sql) (line 82)
+* [template_sp_identify_hospitalization_encounters.sql](Question_0000/sql/template_sp_identify_hospitalization_encounters.sql)
+<br> which executes (line 87) the stored procedure [template_fn_identify_patients.sql](Question_0000/sql/template_fn_identify_patients.sql)
+* Example: [Question_0008](https://github.com/DBMI/R2D2-Public/tree/master/Question_0008) see [template_query.sql](Question_0008/sql/template_query.sql) (line 82)
 
 <br><br>
 
