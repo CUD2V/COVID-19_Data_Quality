@@ -1,4 +1,4 @@
-## SQL code used by CU-Anschutz Campus
+## SQL Code Used by CU-Anschutz Campus
 
 The SQL code within this folder is used by CU-Anschutz Campus to answer questions for the Rapid Response Data Discovery for COVID Clinical Consultation using Patient Observations (R2D2 C3PO)  Research Project
 
